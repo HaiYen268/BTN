@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stylesxoa.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+          <a href="QLLC.html"
+            ><img src="pic.QLLC/CGV_Cinemas.svg" alt="Logo"
+          /></a>
+        </div>
+        <ul class="taikhoan">
+          <li>
+            <a href="#" class="imgacc"
+              ><img src="pic.QLLC/icon_account.png"
+            /></a>
+            <ul class="dangxuat">
+              <li><a href="#">Đăng xuất</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" class="tb">🔔</a>
+            <ul class="note">
+              <li><a href="#">Không có thông báo </a></li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+      <div class="side-menu" id="sideMenu">
+        <h2>Menu</h2>
+        <a href="#">Trang Chủ</a>
+        <a href="#">Quản lý phim</a>
+        <a href="#">Quản lý lịch chiếu</a>
+        <a href="#">Quản lý phòng chiếu</a>
+        <a href="#">Quản lý nhân viên</a>
+      </div>
+      <script>
+        function toggleMenu() {
+          document.getElementById("sideMenu").classList.toggle("open");
+        }
+      </script>
+    </div>
+    <div
+      class="them_suat_chieu"
+      style="width: 200px; height: 40px; margin: 40px"
+    >
+      <a href="#">Thêm suất chiếu</a>
+    </div>
+    <div class="date">
+      <form action="">
+        <label>Ngày khởi chiếu</label>
+        <input type="date" style="margin-right: 40px" />
+        <label>Ngày kết thúc</label>
+        <input type="date" style="margin-right: 100px" />
+        <label
+          ><img
+            src="pic.QLLC/png-clipart-search-icon-computer-icons-android-desktop-search-button-internet-share-icon-thumbnail-removebg-preview.png"
+            alt=""
+            class="loc"
+        /></label>
+        <input type="date" />
+      </form>
+    </div>
+    <div>
+      <table>
+        <tr class="lichchieu">
+          <th>Mã phim</th>
+          <th>Tên phim</th>
+          <th>Ngày chiếu</th>
+          <th>Phòng chiếu</th>
+          <th>Suất chiếu</th>
+          <th>Loại chiếu</th>
+          <th></th>
+        </tr>
+        <tr class="td1">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            <div class="xoa">
+              <a href="#">Xóa</a>
+              <br />
+            </div>
+            <p></p>
+            <div class="sua">
+              <a href="#">Điều chỉnh</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <a href="BTN/QLLC.html"
+        ><img src="pic.QLLC/back.png" alt="" class="back"
+      /></a>
+    </div>
+  </body>
+</html>

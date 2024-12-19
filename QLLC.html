@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+          <a href="#"
+            ><img src="pic.QLLC/CGV_Cinemas.svg" alt="Logo" class="cgv"
+          /></a>
+        </div>
+        <ul class="taikhoan">
+          <li>
+            <a href="#" class="imgacc"
+              ><img src="pic.QLLC/icon_account.png"
+            /></a>
+            <ul class="dangxuat">
+              <li><a href="#">Đăng xuất</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" class="tb">🔔</a>
+            <ul class="note">
+              <li><a href="#">Không có thông báo </a></li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+      <div class="side-menu" id="sideMenu">
+        <h2>Menu</h2>
+        <a href="#">Trang Chủ</a>
+        <a href="#">Quản lý phim</a>
+        <a href="#">Quản lý lịch chiếu</a>
+        <a href="#">Quản lý phòng chiếu</a>
+        <a href="#">Quản lý nhân viên</a>
+      </div>
+      <script>
+        function toggleMenu() {
+          document.getElementById("sideMenu").classList.toggle("open");
+        }
+      </script>
+    </div>
+    <main class="home">
+      <h1>TRANG CHỦ</h1>
+      <div class="grid">
+        <div class="QL">
+          <a href="#"
+            ><img src="pic.QLLC/qllc.png" alt="Quản lý lịch chiếu"
+          /></a>
+          <br />Quản lý lịch chiếu
+        </div>
+        <div class="QL">
+          <a href="#"><img src="pic.QLLC/qlp.png" alt="Quản lý phim" /></a>
+          <br />Quản lý phim
+        </div>
+        <div class="QL">
+          <a href="#"
+            ><img src="pic.QLLC/qltk.png" alt="Quản lý tài khoản"
+          /></a>
+          <br />Quản lý tài khoản
+        </div>
+        <div class="QL">
+          <a href="#"
+            ><img src="pic.QLLC/qlpc.png" alt="Quản lý phòng chiếu"
+          /></a>
+          <br />Quản lý phòng chiếu
+        </div>
+        <div class="QL">
+          <a href="#"
+            ><img src="pic.QLLC/qlpq.png" alt="Quản lý phân quyền"
+          /></a>
+          <br />Quản lý phân quyền
+        </div>
+      </div>
+    </main>
+
+    <div class="line"><hr /></div>
+  </body>
+</html>
